@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <menuitem id="mylib_root_menu" name="Trường học của tôi" sequence="1"/>
+            <menuitem id="truong_hoc_menu" name="Trường học" parent="mylib_root_menu"
+                      action="truong_hoc_view_act" sequence="1"/>
+            <menuitem id="giao_vien_menu" name="Giáo viên" parent="mylib_root_menu"
+                      action="giao_vien_view_act" sequence="5"/>
+            <menuitem id="uy_quyen_menu" name="Ủy quyền" parent="mylib_root_menu"
+                      action="uy_quyen_view_act" sequence="10"/>
+            <menuitem id="thoi_gian_su_dung_menu" name="Thời gian sử dụng" parent="mylib_root_menu"
+                          action="thoi_gian_su_dung_view_act" sequence="15"/>
+            <menuitem id="giao_an_menu" name="Giáo án" parent="mylib_root_menu"
+                      action="giao_an_view_act" sequence="20"/>
+    </data>
+</odoo>

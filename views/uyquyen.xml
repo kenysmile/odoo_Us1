@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="uy_quyen_view_act" model="ir.actions.act_window">
+            <field name="name">Ủy quyền</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">th.uyquyen</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="uy_quyen_tree" model="ir.ui.view">
+            <field name="name">Ủy quyền</field>
+            <field name="model">th.uyquyen</field>
+            <field name="arch" type="xml">
+                <tree string="Ủy quyền">
+                    <field name="giaovien_ids"/>
+                    <field name="date_start"/>
+                    <field name="date_expire"/>
+                    <field name="giaoan_ids"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="thoi_gian_su_dung_view_act" model="ir.actions.act_window">
+            <field name="name">Thời gian sử dụng</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">th.thoigiansudung</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="giao_vien_view_act" model="ir.actions.act_window">
+            <field name="name">Giáo viên</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">th.giaovien</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="giao_vien_tree" model="ir.ui.view">
+            <field name="name">Giáo viên</field>
+            <field name="model">th.giaovien</field>
+            <field name="arch" type="xml">
+                <tree string="Giáo viên">
+                    <field name="name"/>
+                    <field name="truong"/>
+                    <field name="lop"/>
+                    <field name="email"/>
+                    <field name="pas"/>
+                    <field name="sdt"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>
