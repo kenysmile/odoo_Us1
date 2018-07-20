@@ -9,15 +9,33 @@
             <field name="view_mode">tree,form</field>
         </record>
 
+        <record id="uy_quyen_form" model="ir.ui.view">
+            <field name="name">Ủy quyền</field>
+            <field name="model">th.uyquyen</field>
+            <field name="arch" type="xml">
+                <form string="Ủy quyền">
+                    <sheet>
+                        <group>
+                            <field name="giaovien"/>
+                            <field name="date_start"/>
+                            <field name="date_expire"/>
+                            <field name="giaoan"/>
+                            <field name="thoigian_ids"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
         <record id="uy_quyen_tree" model="ir.ui.view">
             <field name="name">Ủy quyền</field>
             <field name="model">th.uyquyen</field>
             <field name="arch" type="xml">
                 <tree string="Ủy quyền">
-                    <field name="giaovien_ids"/>
+                    <field name="giaovien"/>
                     <field name="date_start"/>
                     <field name="date_expire"/>
-                    <field name="giaoan_ids"/>
+                    <field name="giaoan"/>
                 </tree>
             </field>
         </record>

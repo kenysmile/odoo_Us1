@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+       <record id="mylibk_group" model="ir.module.category">
+           <field name="name">Nhóm quyền</field>
+           <field name="sequence" eval="1"/>
+       </record>
+
+        <record id="mylib_manager" model="res.groups">
+            <field name="name">Quản lí giáo viên</field>
+            <field name="category_id" ref="mylibk_group"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+
+        <record id="mylib_employee" model="res.groups">
+            <field name="name">Giáo viên</field>
+            <field name="category_id" ref="mylibk_group"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+    </data>
+</odoo>

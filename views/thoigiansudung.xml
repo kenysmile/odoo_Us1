@@ -9,5 +9,37 @@
             <field name="view_mode">tree,form</field>
         </record>
 
+        <record id="thoi_gian_su_dung_form" model="ir.ui.view">
+            <field name="name">Thời gian sử dụng</field>
+            <field name="model">th.thoigiansudung</field>
+            <field name="arch" type="xml">
+                <form string="Thời gian sử dụng">
+                    <sheet>
+                        <group>
+                            <field name="giaovien"/>
+                            <field name="date_start"/>
+                            <field name="date_expire"/>
+                            <field name="giaoan"/>
+                            <field name="uyquyen_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="thoi_gian_su_dung_tree" model="ir.ui.view">
+            <field name="name">Thời gian sử dụng</field>
+            <field name="model">th.thoigiansudung</field>
+            <field name="arch" type="xml">
+                <tree string="Thời gian sử dụng">
+                    <field name="giaovien"/>
+                    <field name="date_start"/>
+                    <field name="date_expire"/>
+                    <field name="giaoan"/>
+                    <field name="uyquyen_id"/>
+                </tree>
+            </field>
+        </record>
+
     </data>
 </odoo>

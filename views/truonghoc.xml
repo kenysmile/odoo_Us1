@@ -9,5 +9,18 @@
             <field name="view_mode">tree,form</field>
         </record>
 
+        <record id="truong_hoc_tree" model="ir.ui.view">
+            <field name="name">Trường học</field>
+            <field name="model">th.truonghoc</field>
+            <field name="arch" type="xml">
+                <tree string="Trường học">
+                    <field name="name"/>
+                    <field name="diachi"/>
+                    <field name="tinhtrang"/>
+                    <field name="giaovien_ids"/>
+
+                </tree>
+            </field>
+        </record>
     </data>
 </odoo>

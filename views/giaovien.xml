@@ -15,7 +15,7 @@
             <field name="arch" type="xml">
                 <tree string="Giáo viên">
                     <field name="name"/>
-                    <field name="truong"/>
+                    <!--<field name="truong"/>-->
                     <field name="lop"/>
                     <field name="email"/>
                     <field name="pas"/>

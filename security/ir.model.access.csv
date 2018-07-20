@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+acess_mylib_giaovien_mylib_manager,acess_mylib_giaovien_mylib_manager,model_th_giaovien,mylib_manager,1,1,1,1
+acess_mylib_giaovien_mylib_employee,acess_mylib_giaovien_mylib_employee,model_th_giaovien,mylib_employee,1,0,0,0
+
+
+acess_mylib_truong_hoc_mylib_manager,acess_mylib_truong_hoc_mylib_manager,model_th_truonghoc,mylib_manager,1,1,1,1
+acess_mylib_truong_hoc_mylib_manager,acess_mylib_truong_hoc_mylib_manager,model_th_truonghoc,mylib_employee,1,0,0,0
+
+

@@ -10,13 +10,16 @@
 
 """,
     'data': [
-             'views/giaoan.xml',
-             'views/thoigiansudung.xml',
-             'views/uyquyen.xml',
-             'views/giaovien.xml',
-             'views/truonghoc.xml',
-             'views/menu.xml',
-             ],
+        'views/giaoan.xml',
+        'views/thoigiansudung.xml',
+        'views/uyquyen.xml',
+        'views/giaovien.xml',
+        'views/truonghoc.xml',
+        'security/group.xml',
+        'security/record.rule.xml',
+        'security/ir.model.access.csv',
+        'views/menu.xml',
+    ],
     'website': '',
     'depends': ['base'],
 
